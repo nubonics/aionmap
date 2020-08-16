@@ -4,7 +4,7 @@
 ## install
 > **python setup.py install**
 
-> **pip install requirements.txt**
+> **pip install -r requirements.txt**
 
 ## usage
 ### scan result
