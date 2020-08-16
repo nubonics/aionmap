@@ -15,7 +15,7 @@ regex_version = re.compile('[0-9]+')
 regex_subversion = re.compile('\.[0-9]+')
 
 class PortScannerBase(object):
-    def __init__(self, nmap_search_path=('nmap', '/usr/bin/nmap', '/usr/local/bin/nmap', '/sw/bin/nmap', '/opt/local/bin/nmap')):
+    def __init__(self, nmap_search_path=('nmap', '/usr/bin/nmap', '/usr/local/bin/nmap', '/sw/bin/nmap', '/opt/local/bin/nmap', 'C:\Program Files (x86)\Nmap\')):
         self._nmap_path = ''                # nmap path
         self._scan_result = {}
         self._nmap_version_number = 0       # nmap version number
