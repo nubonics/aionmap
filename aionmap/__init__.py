@@ -20,7 +20,7 @@ class PortScannerBase(object):
     """
     # def __init__(self, nmap_search_path=('nmap', '/usr/bin/nmap', '/usr/local/bin/nmap', '/sw/bin/nmap', '/opt/local/bin/nmap')):
     def __init__(self):
-        self._nmap_path = r'C:\Program Files (x86)\Nmap\nmap.exe'                # nmap path
+        self._nmap_path = r"C:\Program Files (x86)\Nmap\nmap.exe"                # nmap path
         # self._scan_result = {}
         self._nmap_version_number = 7       # nmap version number
         self._nmap_subversion_number = 80    # nmap subversion number
