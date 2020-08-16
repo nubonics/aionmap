@@ -2,7 +2,8 @@
 > A python aysncio package for nmap.
 
 ## install
-> just run **python3 setup.py**
+> **python setup.py install**
+> ** pip install requirements.txt **
 
 ## usage
 ### scan result
