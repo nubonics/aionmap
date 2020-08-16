@@ -15,6 +15,7 @@ async def main():
         if isinstance(result, Exception):
             print("error")
         else:
+            await result
             print(result)
 
 if __name__ == '__main__':
