@@ -3,6 +3,7 @@
 
 ## install
 > **python setup.py install**
+
 > **pip install requirements.txt**
 
 ## usage
