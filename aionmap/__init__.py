@@ -21,7 +21,7 @@ class PortScannerBase(object):
     # def __init__(self, nmap_search_path=('nmap', '/usr/bin/nmap', '/usr/local/bin/nmap', '/sw/bin/nmap', '/opt/local/bin/nmap')):
     def __init__(self):
         self._nmap_path = r'C:\Program Files (x86)\Nmap\nmap.exe'                # nmap path
-        self._scan_result = {}
+        # self._scan_result = {}
         self._nmap_version_number = 7       # nmap version number
         self._nmap_subversion_number = 80    # nmap subversion number
         self._nmap_search_path = nmap_search_path
@@ -71,12 +71,12 @@ class PortScannerBase(object):
                     yield from proc.wait()
         if not is_nmap_found:
             raise NmapError('nmap program was not found in path')
-            
+    '''
     @asyncio.coroutine
     def nmap_version(self):
-        yield from self._ensure_nmap_path_and_version()
+        # yield from self._ensure_nmap_path_and_version()
         return (self._nmap_version_number, self._nmap_subversion_number)
-    '''
+
 
     @asyncio.coroutine
     def listscan(self, hosts='127.0.0.1', dns_lookup = True, sudo=False,  sudo_passwd=None):
